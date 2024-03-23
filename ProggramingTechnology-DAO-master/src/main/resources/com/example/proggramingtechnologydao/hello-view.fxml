@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" prefHeight="313.0" prefWidth="586.0" spacing="20.0" style="-fx-background-color: #e0f2f4;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proggramingtechnologydao.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <ListView fx:id="listAccount" prefHeight="279.0" prefWidth="332.0" />
+      <VBox prefHeight="207.0" prefWidth="215.0">
+         <children>
+            <TextField fx:id="idAccount" prefHeight="26.0" prefWidth="182.0" />
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonHandler" prefHeight="26.0" prefWidth="218.0" style="-fx-background-color: #e0f2f4;" text="Поиск по id" />
+            <Separator prefHeight="16.0" prefWidth="121.0" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonHandler" prefHeight="26.0" prefWidth="225.0" style="-fx-background-color: #e0f2f4;" text="Удалить" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
